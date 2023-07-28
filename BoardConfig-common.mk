@@ -279,6 +279,10 @@ BOARD_SECCOMP_POLICY = device/google/gs101/seccomp_policy
 #CURL
 BOARD_USES_CURL := true
 
+# Adaptive charging
+PRODUCT_COPY_FILES += \
+    device/google/gs101/conf/adaptivecharging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/adaptivecharging.xml
+
 # VISION
 # Exynos vision framework (EVF)
 #TARGET_USES_EVF := true
